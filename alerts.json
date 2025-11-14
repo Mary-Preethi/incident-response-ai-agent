@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-11-05T10:12:00+05:30",
+    "alert_type": "Suspicious login",
+    "description": "Multiple failed logins followed by a successful admin login from IP 203.0.113.12",
+    "username": "admin",
+    "source_ip": "203.0.113.12",
+    "host": "web-server-1"
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-11-05T11:30:00+05:30",
+    "alert_type": "Malware detected",
+    "description": "Endpoint AV found 'invoice.pdf.exe' flagged as trojan on host PC-23",
+    "file_name": "invoice.pdf.exe",
+    "host": "PC-23"
+  },
+  {
+    "id": 3,
+    "timestamp": "2025-11-05T12:05:00+05:30",
+    "alert_type": "Data exfiltration",
+    "description": "Large outbound transfer to foreign IP 198.51.100.45 from db-server-2",
+    "host": "db-server-2",
+    "dest_ip": "198.51.100.45"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "alert": {
+      "id": 1,
+      "timestamp": "2025-11-05T10:12:00+05:30",
+      "alert_type": "Suspicious login",
+      "description": "Multiple failed logins followed by a successful admin login from IP 203.0.113.12",
+      "username": "admin",
+      "source_ip": "203.0.113.12",
+      "host": "web-server-1"
+    },
+    "analysis": {
+      "severity": "High",
+      "recommendations": [
+        "Isolate host web-server-1 from network.",
+        "Rotate the admin password and force MFA reset for the user.",
+        "Review recent login history and suspicious IP addresses.",
+        "Search for indicators of compromise on the host."
+      ],
+      "explanation": "Multiple failed attempts followed by success suggests credential compromise."
+    },
+    "timestamp_processed": "2025-11-14T13:08:59.207760"
+  },
+  {
+    "alert": {
+      "id": 2,
+      "timestamp": "2025-11-05T11:30:00+05:30",
+      "alert_type": "Malware detected",
+      "description": "Endpoint AV found 'invoice.pdf.exe' flagged as trojan on host PC-23",
+      "file_name": "invoice.pdf.exe",
+      "host": "PC-23"
+    },
+    "analysis": {
+      "severity": "High",
+      "recommendations": [
+        "Quarantine PC-23.",
+        "Run full AV and collect memory dump.",
+        "Identify lateral movement and scan other endpoints.",
+        "Search for the file across the environment."
+      ],
+      "explanation": "AV detected trojan-like file; treat as active compromise."
+    },
+    "timestamp_processed": "2025-11-14T13:08:59.208482"
+  },
+  {
+    "alert": {
+      "id": 3,
+      "timestamp": "2025-11-05T12:05:00+05:30",
+      "alert_type": "Data exfiltration",
+      "description": "Large outbound transfer to foreign IP 198.51.100.45 from db-server-2",
+      "host": "db-server-2",
+      "dest_ip": "198.51.100.45"
+    },
+    "analysis": {
+      "severity": "Critical",
+      "recommendations": [
+        "Block destination IP 198.51.100.45.",
+        "Isolate the DB host and stop data transfers.",
+        "Collect network and process logs for the last 24 hours.",
+        "Notify incident response and legal/compliance teams."
+      ],
+      "explanation": "Large outbound transfer to suspicious IP indicates data theft risk."
+    },
+    "timestamp_processed": "2025-11-14T13:08:59.209397"
+  },
+  {
+    "result_id": "78fb7099-4352-4f1a-baff-35bacce05cd6",
+    "alert": {
+      "id": 3,
+      "timestamp": "2025-11-05T12:05:00+05:30",
+      "alert_type": "Data exfiltration",
+      "description": "Large outbound transfer to foreign IP 198.51.100.45 from db-server-2",
+      "host": "db-server-2",
+      "dest_ip": "198.51.100.45"
+    },
+    "analysis": {
+      "severity": "Critical",
+      "recommendations": [
+        "Block destination IP 198.51.100.45.",
+        "Isolate the DB host and stop data transfers.",
+        "Collect network and process logs for the last 24 hours.",
+        "Notify incident response and legal/compliance teams."
+      ],
+      "explanation": "Large outbound transfer to suspicious IP indicates data theft risk."
+    },
+    "saved_by": "interactive_user",
+    "timestamp_saved": "2025-11-14T13:20:52.592002"
+  },
+  {
+    "result_id": "51abfea2-8cd8-4ed3-931b-962e4a93a353",
+    "alert": {
+      "id": 2,
+      "timestamp": "2025-11-05T11:30:00+05:30",
+      "alert_type": "Malware detected",
+      "description": "Endpoint AV found 'invoice.pdf.exe' flagged as trojan on host PC-23",
+      "file_name": "invoice.pdf.exe",
+      "host": "PC-23"
+    },
+    "analysis": {
+      "severity": "High",
+      "recommendations": [
+        "Quarantine PC-23.",
+        "Run full AV and collect memory dump.",
+        "Identify lateral movement and scan other endpoints.",
+        "Search for the file across the environment."
+      ],
+      "explanation": "AV detected trojan-like file; treat as active compromise."
+    },
+    "saved_by": "interactive_user",
+    "timestamp_saved": "2025-11-14T13:21:22.761647"
+  },
+  {
+    "result_id": "47ed883b-13b0-423e-a701-7ed388f39b1d",
+    "alert": {
+      "id": 4,
+      "timestamp": "2025-11-14T18:53:54.486812+05:30",
+      "alert_type": "suspicious login",
+      "description": "i logged into my system early morning , and saw a file that wasnt created by me",
+      "host": "pc-20",
+      "username": "preethi",
+      "source_ip": "no",
+      "dest_ip": "10.0.0.5",
+      "file_name": "arl_thi"
+    },
+    "analysis": {
+      "severity": "High",
+      "recommendations": [
+        "Isolate host pc-20 from network.",
+        "Rotate the admin password and force MFA reset for the user.",
+        "Review recent login history and suspicious IP addresses.",
+        "Search for indicators of compromise on the host."
+      ],
+      "explanation": "Multiple failed attempts followed by success suggests credential compromise."
+    },
+    "saved_by": "interactive_user",
+    "timestamp_saved": "2025-11-14T13:24:16.616055"
+  },
+  {
+    "result_id": "59f6a571-9a06-4470-ae1c-bddd002d80a9",
+    "alert": {
+      "id": 2,
+      "timestamp": "2025-11-05T11:30:00+05:30",
+      "alert_type": "Malware detected",
+      "description": "Endpoint AV found 'invoice.pdf.exe' flagged as trojan on host PC-23",
+      "file_name": "invoice.pdf.exe",
+      "host": "PC-23"
+    },
+    "analysis": {
+      "severity": "High",
+      "recommendations": [
+        "Quarantine PC-23.",
+        "Run full AV and collect memory dump.",
+        "Identify lateral movement and scan other endpoints.",
+        "Search for the file across the environment."
+      ],
+      "explanation": "AV detected trojan-like file; treat as active compromise."
+    },
+    "saved_by": "interactive_user",
+    "timestamp_saved": "2025-11-14T13:34:54.047891"
+  },
+  {
+    "result_id": "0d933b00-e5af-4b3a-8908-8474e6a4f8a1",
+    "alert": {
+      "id": 2,
+      "timestamp": "2025-11-05T11:30:00+05:30",
+      "alert_type": "Malware detected",
+      "description": "Endpoint AV found 'invoice.pdf.exe' flagged as trojan on host PC-23",
+      "file_name": "invoice.pdf.exe",
+      "host": "PC-23"
+    },
+    "analysis": {
+      "threat_category": "Malware",
+      "risk_score": 70,
+      "severity": "High",
+      "confidence": 0.6,
+      "phase_recommendations": {
+        "Containment": [
+          "Quarantine endpoint",
+          "Disable network interfaces for host",
+          "Block known malicious hashes/URLs"
+        ],
+        "Eradication": [
+          "Run full AV and EDR cleanup",
+          "Reimage host if persistence is detected",
+          "Remove scheduled tasks/backdoors"
+        ],
+        "Recovery": [
+          "Restore from clean backups",
+          "Rebuild systems as needed, bring back to production carefully"
+        ],
+        "Post-Incident": [
+          "Perform malware triage and IOC sharing",
+          "Update detection rules"
+        ]
+      },
+      "recommendations": [
+        "Quarantine endpoint",
+        "Disable network interfaces for host",
+        "Run full AV and EDR cleanup",
+        "Reimage host if persistence is detected",
+        "Restore from clean backups",
+        "Rebuild systems as needed, bring back to production carefully",
+        "Perform malware triage and IOC sharing",
+        "Update detection rules"
+      ],
+      "explanation": "Threat categorized as Malware. Heuristic risk score 70 suggests High severity."
+    },
+    "saved_by": "interactive_user",
+    "timestamp_saved": "2025-11-14T13:45:07.003823"
+  },
+  {
+    "result_id": "191df517-20bc-44be-b4b4-6e8ae8af3bb1",
+    "alert": {
+      "id": 4,
+      "timestamp": "2025-11-14T19:17:16.336410+05:30",
+      "alert_type": "suspicious login",
+      "description": "I logged into my system this morning and found a new file , which wasnt created by me .",
+      "host": "pc-20",
+      "username": "Preethi",
+      "source_ip": "10.10.1.7",
+      "dest_ip": "172.16.10.50",
+      "file_name": "out_irl"
+    },
+    "analysis": {
+      "threat_category": "Credential Compromise",
+      "risk_score": 30,
+      "severity": "Medium",
+      "confidence": 0.2,
+      "phase_recommendations": {
+        "Containment": [
+          "Isolate affected host from network",
+          "Force password reset and revoke sessions",
+          "Block suspicious source IPs at perimeter"
+        ],
+        "Eradication": [
+          "Search for indicators of compromise and remove backdoors",
+          "Rotate credentials and reissue secrets",
+          "Patch vulnerable services"
+        ],
+        "Recovery": [
+          "Restore services and re-enable accounts with new credentials",
+          "Monitor for re-occurrence"
+        ],
+        "Post-Incident": [
+          "Perform root-cause analysis and update playbooks",
+          "User awareness/training if phishing involved"
+        ]
+      },
+      "recommendations": [
+        "Isolate affected host from network",
+        "Force password reset and revoke sessions",
+        "Search for indicators of compromise and remove backdoors",
+        "Rotate credentials and reissue secrets",
+        "Restore services and re-enable accounts with new credentials",
+        "Monitor for re-occurrence",
+        "Perform root-cause analysis and update playbooks",
+        "User awareness/training if phishing involved"
+      ],
+      "explanation": "Threat categorized as Credential Compromise. Heuristic risk score 30 suggests Medium severity."
+    },
+    "saved_by": "interactive_user",
+    "timestamp_saved": "2025-11-14T13:47:37.374648"
+  }
+]
